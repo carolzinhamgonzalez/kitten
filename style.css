@@ -1,37 +1,37 @@
 .wrapper{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50vh 50vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50vh 50vh;
 }
 
 .cat{
-    background-image: url("docs/kitten-medium.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    grid-column: 1/ span 3;
-    grid-row: 2;
+  background-image: url("docs/kitten-medium.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  grid-column: 1/ span 3;
+  grid-row: 2;
 }
 
 body{
-    background-image: url("docs/sunny-day.jpg");
-    background-size: cover;
+  background-image: url("docs/sunny-day.jpg");
+  background-size: cover;
 }
 
-@media screen and (max-width: 800px) {
-    body{
-        background-image: url("docs/night.jpg");
-      }
-      .cat{
-          background-image: url("docs/kitten-small.png");
-      }
+@media screen and (max-width: 900px) {
+  body{
+      background-image: url("docs/night.jpg");
+    }
+    .cat{
+      background-image: url("docs/kitten-small.png");
+    }
 }
 
-@media screen and (max-width: 400px) {
-    body{
-        background-image: url("docs/dawn.png");
-      }
-      .cat{
-          background-image: url("docs/kitten-large.png");
-      }
+@media screen and (max-width: 600px) {
+  body{
+      background-image: url("docs/dawn.png");
+    }
+    .cat{
+      background-image: url("docs/kitten-large.png");
+    }
 }
